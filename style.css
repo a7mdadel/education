@@ -129,57 +129,59 @@ i.fa-bars{
     display: none;
 }
 @media (max-width:991px){
-    header .links .container .icon i{
-        margin-right: 7px;
+    .nav{
+        display: none;
     }
-    header .navbar .container .logo *{
-        color: #02040e;
-    }
-    header .navbar .container .nav ul{
+    .nav{
         position: absolute;
-        right: 48px;
-        top: 30px;
-        width: 200px;
+        background-color: #021a31e0;
+        left: 0;top: 34px;
+        width: 100%;
+        height: fit-content;
+        padding: 0 50px;
+    } 
+    header .navbar .container  ul{
         display: flex;
+        align-items: center;
         flex-direction: column;
-        align-items: end;
-        color: #02040e;
-        background-color: hsla(209, 92%, 10%, 0.918);
-        opacity:0;
-        pointer-events: none;
-        transition: .5s;
+    }
+  
+    .nav ul li{
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 15px;
+    }
+    .nav.active{
+        display: block;
     }
     i.fa-bars{
-        display: block;
-        position: absolute;
-        right: 55px;
-        padding: 10px 0;
         cursor: pointer;
-        font-size: 25px;
+        display: block;
     }
-    i.fa-bars:hover ~  .nav ul{
-        opacity: 1;
+    .nav ul li a{
+        color: white;
+        padding: 15px 0;
     }
-     .nav ul li{
-        width: 100%;
+    .nav ul li a:hover{
+        color: #f7631b;
+        padding-left: 15px;
     }
-    header .navbar .container .nav ul a{
-        width: 100%;
-        padding: 17px 20px;
+  
+    .nav ul li i{
+    margin-left: 8px;
     }
-    header .navbar .container .nav ul a:hover{
-        padding: 17px 30px;
-    }
-    header .links .container .contact{
-        width: 240px;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-    header .links .container .contact p,
+    header .links .container .contact p ,
     header .links .container .contact a{
+        cursor: pointer;
         font-size: 12px;
-}}
+    }
+    header .links .container .icon i{
+        margin-right: 10px;
+    }
+}
 
 /* section1 */
 .section1 {
