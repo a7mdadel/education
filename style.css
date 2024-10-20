@@ -156,6 +156,7 @@ i.fa-bars{
     }
     .nav.active{
         display: block;
+
     }
     i.fa-bars{
         cursor: pointer;
@@ -163,7 +164,7 @@ i.fa-bars{
     }
     .nav ul li a{
         color: white;
-        padding: 15px 0;
+        padding: 0px 0;
     }
     .nav ul li a:hover{
         color: #f7631b;
